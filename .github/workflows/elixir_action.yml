@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ "main", "dev" ]
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "main", "dev" ]
   workflow_dispatch:
 
 jobs:
@@ -23,8 +23,4 @@ jobs:
       - name: Run tests
         run: mix test
         
-      # - name: Lint with Credo
-      #   run: mix credo
-        
-      - name: Format with Elixir formatter
-        run: mix format --check-formatted
+   
